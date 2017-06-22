@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace perceptron{ 
-    class Program{
+    class Perceptron{
         static void Main(string[] args){
             int[,] entrada = new int[,] { { 1, 0 }, { 1, 1 }, { 0, 1 }, { 0, 0 } };
             int[] saidas = { 0, 1, 0, 0 };
