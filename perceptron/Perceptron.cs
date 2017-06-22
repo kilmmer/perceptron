@@ -26,15 +26,13 @@ namespace perceptron{
 
                     totalErro += Math.Abs(error);
                 }
-
             }
-
             Console.WriteLine("Resultados: ");
-            for (int i = 0; i < 4; i++)
-                Console.WriteLine(calcularSaida(entrada[i, 0], entrada[i, 1], pesos));
-
+            for (int i = 0; i < 4; i++) {
+                Console.Write(calcularSaida(entrada[i, 0], entrada[i, 1], pesos)+"\t");
+            }
+            Console.WriteLine("\n\n\nPressione alguma tecla para sair.");
             Console.ReadLine();
-
         }
 
         private static int calcularSaida(double input1, double input2, double[] pesos){
